@@ -87,7 +87,7 @@ export default function InstituteWebsite() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full bg-background/95 dark:bg-gray-900/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 dark:supports-[backdrop-filter]:bg-gray-900/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex h-16 items-center justify-between">
-          <a href="#hero" className="flex items-center gap-2">
+          <a className="flex items-center gap-2">
             <GraduationCap className="h-8 w-8 text-blue-600 dark:text-blue-400" />
             <span className="text-xl font-bold dark:text-white">
               Bajaj Institute
@@ -134,8 +134,7 @@ export default function InstituteWebsite() {
       </header>
       {/* Hero Section */}
       <section
-        id="hero"
-        className="relative pb-20 lg:pb-32 pt-8 lg:pt-12 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 rounded-2xl"
+        className="relative pt-2 lg:pt-4 pb-8 lg:pb-12 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 rounded-2xl"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -307,7 +306,7 @@ export default function InstituteWebsite() {
       {/* Courses Section */}
       <section
         id="courses"
-        className="py-15 bg-gray-50 rounded-2xl dark:bg-[#181f2a]"
+        className="py-18 bg-gray-50 rounded-2xl dark:bg-[#181f2a]"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
@@ -753,7 +752,7 @@ export default function InstituteWebsite() {
       {/* Facilities Section */}
       <section
         id="facilities"
-        className="py-15 bg-gray-50 rounded-2xl dark:bg-[#181f2a]"
+        className="py-18 bg-gray-50 rounded-2xl dark:bg-[#181f2a]"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
