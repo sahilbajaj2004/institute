@@ -85,17 +85,24 @@ export default function ContactSection() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-2 dark:text-gray-400">
-                E-5/99, gali no 2
+                Kh. No. 877 B.K Ashram Road, Labour Chowk
               </p>
               <p className="text-muted-foreground mb-4 dark:text-gray-400">
-                india delhi
+                Sant Nagar, Burari, Delhi - 110084
               </p>
               <Button
+                asChild
                 variant="outline"
                 size="sm"
                 className="dark:border-gray-600 dark:text-gray-200"
               >
-                Get Directions
+                <a
+                  href="https://maps.app.goo.gl/cyMKARvPjknSuas67"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Directions
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -111,14 +118,17 @@ export default function ContactSection() {
                 Admissions Helpline
               </p>
               <p className="font-semibold text-lg mb-4 dark:text-white">
-                +91 98110 57531
+                +91 87007 14570
               </p>
               <Button
+                asChild
                 variant="outline"
                 size="sm"
                 className="dark:border-gray-600 dark:text-gray-200"
               >
-                Call Now
+                <a href="tel:+918700714570">
+                  Call Now
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -137,11 +147,14 @@ export default function ContactSection() {
                 sahilbajaj0941@gmail.com
               </p>
               <Button
+                asChild
                 variant="outline"
                 size="sm"
                 className="dark:border-gray-600 dark:text-gray-200"
               >
-                Send Email
+                <a href="mailto:sahilbajaj0941@gmail.com">
+                  Send Email
+                </a>
               </Button>
             </CardContent>
           </Card>
