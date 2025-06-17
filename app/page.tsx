@@ -1,7 +1,13 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   BookOpen,
   Users,
@@ -18,7 +24,7 @@ import {
   Calculator,
   Globe,
   ChevronRight,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function InstituteWebsite() {
   return (
@@ -26,10 +32,10 @@ export default function InstituteWebsite() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
         <div className="container px-8 lg:px-12 flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a href="#hero" className="flex items-center gap-2">
             <GraduationCap className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold">Excellence Institute</span>
-          </div>
+            <span className="text-xl font-bold">Bajaj Institute</span>
+          </a>
           <nav className="hidden md:flex items-center gap-6">
             <a
               href="#about"
@@ -62,17 +68,24 @@ export default function InstituteWebsite() {
               Contact
             </a>
           </nav>
-          <Button>Enroll Now</Button>
+          <a href="#contact">
+            <Button className="bg-black hover:bg-gray-900 text-white">
+              Enroll Now
+            </Button>
+          </a>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative pb-20 lg:pb-32 pt-8 lg:pt-12 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl">
+      <section
+        id="hero"
+        className="relative pb-20 lg:pb-32 pt-8 lg:pt-12 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl"
+      >
         <div className="container px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">
-                Established 2010 • 15+ Years of Excellence
+                Established 2010 • 15+ Years of Bajaj
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6">
                 Shape Your Future with
@@ -84,13 +97,24 @@ export default function InstituteWebsite() {
                 faculty, modern facilities, and proven results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  Explore Courses
-                  <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button size="lg" variant="outline">
-                  Schedule Campus Visit
-                </Button>
+                <a href="#courses" className="w-full sm:w-auto">
+                  <Button
+                    size="lg"
+                    className="bg-blue-600 hover:bg-blue-700 w-full sm:w-auto"
+                  >
+                    Explore Courses
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+                <a href="#contact" className="w-full sm:w-auto">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full sm:w-auto"
+                  >
+                    Schedule Campus Visit
+                  </Button>
+                </a>
               </div>
               <div className="flex items-center gap-8 mt-8 pt-8 border-t">
                 <div className="text-center">
@@ -140,9 +164,9 @@ export default function InstituteWebsite() {
       {/* About Section */}
       <section id="about" className="py-20">
         <div className="container px-8 lg:px-12">
-          <div className="text-center mb-16">
-            <Badge className="mb-4">About Excellence Institute</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-10">
+            <Badge className="mb-3">About Bajaj Institute</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-3">
               Empowering Students Since 2010
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -155,7 +179,7 @@ export default function InstituteWebsite() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
                   <BookOpen className="h-6 w-6 text-blue-600" />
                 </div>
                 <CardTitle>Expert Curriculum</CardTitle>
@@ -170,7 +194,7 @@ export default function InstituteWebsite() {
 
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
                   <Users className="h-6 w-6 text-green-600" />
                 </div>
                 <CardTitle>Small Class Sizes</CardTitle>
@@ -185,7 +209,7 @@ export default function InstituteWebsite() {
 
             <Card className="text-center">
               <CardHeader>
-                <div className="mx-auto bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
                   <Award className="h-6 w-6 text-purple-600" />
                 </div>
                 <CardTitle>Proven Results</CardTitle>
@@ -202,7 +226,7 @@ export default function InstituteWebsite() {
       </section>
 
       {/* Courses Section */}
-      <section id="courses" className="py-20 bg-gray-50 rounded-2xl">
+      <section id="courses" className="py-15 bg-gray-50 rounded-2xl">
         <div className="container px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Our Programs</Badge>
@@ -222,10 +246,10 @@ export default function InstituteWebsite() {
                   <Computer className="h-8 w-8 text-blue-600" />
                   <Badge variant="secondary">6 Months</Badge>
                 </div>
-                <CardTitle>Computer Science & Programming</CardTitle>
+                <CardTitle>Lorem ipsum dolor sit amet.</CardTitle>
                 <CardDescription>
-                  Master programming fundamentals, data structures, and software
-                  development
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta, sequi.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -243,7 +267,9 @@ export default function InstituteWebsite() {
                     <span className="text-sm font-medium">₹45,000</span>
                   </div>
                 </div>
-                <Button className="w-full">View Details</Button>
+                <Button className="w-full bg-black hover:bg-gray-900 text-white">
+                  View Details
+                </Button>
               </CardContent>
             </Card>
 
@@ -253,10 +279,10 @@ export default function InstituteWebsite() {
                   <Calculator className="h-8 w-8 text-green-600" />
                   <Badge variant="secondary">4 Months</Badge>
                 </div>
-                <CardTitle>Mathematics & Statistics</CardTitle>
+                <CardTitle>Lorem ipsum dolor sit amet.</CardTitle>
                 <CardDescription>
-                  Advanced mathematics, statistics, and analytical problem
-                  solving
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta, sequi.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -274,7 +300,9 @@ export default function InstituteWebsite() {
                     <span className="text-sm font-medium">₹35,000</span>
                   </div>
                 </div>
-                <Button className="w-full">View Details</Button>
+                <Button className="w-full bg-black hover:bg-gray-900 text-white">
+                  View Details
+                </Button>
               </CardContent>
             </Card>
 
@@ -284,10 +312,9 @@ export default function InstituteWebsite() {
                   <Microscope className="h-8 w-8 text-purple-600" />
                   <Badge variant="secondary">8 Months</Badge>
                 </div>
-                <CardTitle>Science & Research</CardTitle>
+                <CardTitle>lorem</CardTitle>
                 <CardDescription>
-                  Laboratory techniques, research methodology, and scientific
-                  analysis
+                  lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,sequi.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -305,7 +332,9 @@ export default function InstituteWebsite() {
                     <span className="text-sm font-medium">₹55,000</span>
                   </div>
                 </div>
-                <Button className="w-full">View Details</Button>
+                <Button className="w-full bg-black hover:bg-gray-900 text-white">
+                  View Details
+                </Button>
               </CardContent>
             </Card>
 
@@ -315,10 +344,10 @@ export default function InstituteWebsite() {
                   <Globe className="h-8 w-8 text-orange-600" />
                   <Badge variant="secondary">3 Months</Badge>
                 </div>
-                <CardTitle>English & Communication</CardTitle>
+                <CardTitle>lorem ipsum dolor sit amet</CardTitle>
                 <CardDescription>
-                  Professional communication, presentation skills, and language
-                  mastery
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae,
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -336,7 +365,9 @@ export default function InstituteWebsite() {
                     <span className="text-sm font-medium">₹25,000</span>
                   </div>
                 </div>
-                <Button className="w-full">View Details</Button>
+                <Button className="w-full bg-black hover:bg-gray-900 text-white">
+                  View Details
+                </Button>
               </CardContent>
             </Card>
 
@@ -346,10 +377,9 @@ export default function InstituteWebsite() {
                   <Building className="h-8 w-8 text-red-600" />
                   <Badge variant="secondary">5 Months</Badge>
                 </div>
-                <CardTitle>Business & Management</CardTitle>
+                <CardTitle>lorem</CardTitle>
                 <CardDescription>
-                  Leadership skills, business strategy, and entrepreneurship
-                  fundamentals
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -367,7 +397,9 @@ export default function InstituteWebsite() {
                     <span className="text-sm font-medium">₹40,000</span>
                   </div>
                 </div>
-                <Button className="w-full">View Details</Button>
+                <Button className="w-full bg-black hover:bg-gray-900 text-white">
+                  View Details
+                </Button>
               </CardContent>
             </Card>
 
@@ -377,10 +409,9 @@ export default function InstituteWebsite() {
                   <GraduationCap className="h-8 w-8 text-indigo-600" />
                   <Badge variant="secondary">12 Months</Badge>
                 </div>
-                <CardTitle>Competitive Exam Prep</CardTitle>
+                <CardTitle>lorem</CardTitle>
                 <CardDescription>
-                  Comprehensive preparation for entrance exams and competitive
-                  tests
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, pr
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -398,7 +429,9 @@ export default function InstituteWebsite() {
                     <span className="text-sm font-medium">₹60,000</span>
                   </div>
                 </div>
-                <Button className="w-full">View Details</Button>
+                <Button className="w-full bg-black hover:bg-gray-900 text-white">
+                  View Details
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -415,7 +448,7 @@ export default function InstituteWebsite() {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our experienced faculty brings real-world expertise and academic
-              excellence to every classroom
+              bajaj to every classroom
             </p>
           </div>
 
@@ -426,15 +459,15 @@ export default function InstituteWebsite() {
                   <AvatarImage src="/placeholder.svg?height=80&width=80" />
                   <AvatarFallback>DR</AvatarFallback>
                 </Avatar>
-                <CardTitle>Dr. Rajesh Kumar</CardTitle>
+                <CardTitle>Dr. Sahil Bajaj</CardTitle>
                 <CardDescription>Head of Computer Science</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
-                  PhD in Computer Science, 15+ years experience
+                  bachelor of Computer Science, 1+ years experience
                 </p>
                 <Badge variant="outline" className="text-xs">
-                  Expert in AI/ML
+                  Expert in web development and AI
                 </Badge>
               </CardContent>
             </Card>
@@ -445,15 +478,15 @@ export default function InstituteWebsite() {
                   <AvatarImage src="/placeholder.svg?height=80&width=80" />
                   <AvatarFallback>PS</AvatarFallback>
                 </Avatar>
-                <CardTitle>Prof. Priya Sharma</CardTitle>
-                <CardDescription>Mathematics Department</CardDescription>
+                <CardTitle>lorem</CardTitle>
+                <CardDescription>loremhgjgjhgjgjhgjhgjhgjh</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
-                  M.Sc Mathematics, 12+ years experience
+                  , 12+ years experience
                 </p>
                 <Badge variant="outline" className="text-xs">
-                  Statistics Expert
+                  lorem
                 </Badge>
               </CardContent>
             </Card>
@@ -464,15 +497,15 @@ export default function InstituteWebsite() {
                   <AvatarImage src="/placeholder.svg?height=80&width=80" />
                   <AvatarFallback>AS</AvatarFallback>
                 </Avatar>
-                <CardTitle>Dr. Amit Singh</CardTitle>
-                <CardDescription>Science & Research</CardDescription>
+                <CardTitle>lorem</CardTitle>
+                <CardDescription>lorem hggdgdgdgd</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
-                  PhD in Physics, 18+ years experience
+                  18+ years experience
                 </p>
                 <Badge variant="outline" className="text-xs">
-                  Research Specialist
+                  lorem hgfghdgdgfdg
                 </Badge>
               </CardContent>
             </Card>
@@ -483,12 +516,12 @@ export default function InstituteWebsite() {
                   <AvatarImage src="/placeholder.svg?height=80&width=80" />
                   <AvatarFallback>MG</AvatarFallback>
                 </Avatar>
-                <CardTitle>Ms. Meera Gupta</CardTitle>
-                <CardDescription>English & Communication</CardDescription>
+                <CardTitle>lorem jhghf</CardTitle>
+                <CardDescription>loremhghdgdgfdf</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
-                  MA English Literature, 10+ years experience
+                  10+ years experience
                 </p>
                 <Badge variant="outline" className="text-xs">
                   Communication Expert
@@ -500,7 +533,7 @@ export default function InstituteWebsite() {
       </section>
 
       {/* Facilities Section */}
-      <section id="facilities" className="py-20 bg-gray-50 rounded-2xl">
+      <section id="facilities" className="py-15 bg-gray-50 rounded-2xl">
         <div className="container px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Our Facilities</Badge>
@@ -592,7 +625,7 @@ export default function InstituteWebsite() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Student Success Stories</Badge>
@@ -625,9 +658,9 @@ export default function InstituteWebsite() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  "The computer science program here gave me the perfect
-                  foundation. The faculty is excellent and the practical
-                  approach helped me land my dream job."
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium nesciunt per
+                  spiciatis mollitia dolorum at praesentium earum placeat qui consequuntur aspernatur
+                  nobis est ullam quaerat modi, voluptate dignissimos repellat! Dolor!"
                 </p>
               </CardContent>
             </Card>
@@ -655,9 +688,9 @@ export default function InstituteWebsite() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  "The mathematics and statistics course was comprehensive.
-                  Small batch sizes meant I got personal attention from
-                  professors."
+                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet quis non s
+                  imilique reiciendis illum maiores, neque vero explicabo nesciunt facere quia hi
+                  c recusandae dolorem deleniti quae velit? Porro, consectetur.."
                 </p>
               </CardContent>
             </Card>
@@ -685,9 +718,9 @@ export default function InstituteWebsite() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  "The research methodology course and lab facilities here are
-                  top-notch. It prepared me well for my career in scientific
-                  research."
+                  "lorem ips
+                  um dolor sit amet consectetu
+                  r adipisicing elit."
                 </p>
               </CardContent>
             </Card>
@@ -696,7 +729,7 @@ export default function InstituteWebsite() {
       </section>
 
       {/* Results Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl">
+      <section className="py-15 bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl">
         <div className="container px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-green-100 text-green-800">
@@ -706,7 +739,7 @@ export default function InstituteWebsite() {
               Outstanding Results & Success Stories
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our consistent track record of excellence speaks for itself. Here
+              Our consistent track record of bajaj speaks for itself. Here
               are our achievements over the years.
             </p>
           </div>
@@ -757,7 +790,7 @@ export default function InstituteWebsite() {
                 <CardTitle className="text-3xl font-bold text-orange-600">
                   500+
                 </CardTitle>
-                <CardDescription>Company Tie-ups</CardDescription>
+                <CardDescription>School Tie-ups</CardDescription>
               </CardHeader>
             </Card>
           </div>
@@ -791,10 +824,10 @@ export default function InstituteWebsite() {
                     <span className="font-medium">Top Scorers:</span>
                     <span className="font-bold text-purple-600">65</span>
                   </div>
-                  <div className="flex justify-between items-center">
+                  {/* <div className="flex justify-between items-center">
                     <span className="font-medium">Avg. Package:</span>
                     <span className="font-bold text-orange-600">₹4.2L</span>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
 
@@ -821,10 +854,10 @@ export default function InstituteWebsite() {
                     <span className="font-medium">Top Scorers:</span>
                     <span className="font-bold text-purple-600">58</span>
                   </div>
-                  <div className="flex justify-between items-center">
+                  {/* <div className="flex justify-between items-center">
                     <span className="font-medium">Avg. Package:</span>
                     <span className="font-bold text-orange-600">₹3.8L</span>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
 
@@ -851,10 +884,10 @@ export default function InstituteWebsite() {
                     <span className="font-medium">Top Scorers:</span>
                     <span className="font-bold text-purple-600">52</span>
                   </div>
-                  <div className="flex justify-between items-center">
+                  {/* <div className="flex justify-between items-center">
                     <span className="font-medium">Avg. Package:</span>
                     <span className="font-bold text-orange-600">₹3.5L</span>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             </div>
@@ -875,7 +908,7 @@ export default function InstituteWebsite() {
                     Best Institute Award
                   </CardTitle>
                   <CardDescription className="text-xs">
-                    Education Excellence 2024
+                    Education bajaj 2024
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -911,7 +944,7 @@ export default function InstituteWebsite() {
                   </div>
                   <CardTitle className="text-sm">Innovation Award</CardTitle>
                   <CardDescription className="text-xs">
-                    Teaching Excellence
+                    Teaching Bajaj
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -931,7 +964,7 @@ export default function InstituteWebsite() {
                       1st
                     </span>
                   </div>
-                  <CardTitle>Priya Sharma</CardTitle>
+                  <CardTitle>Sahil bajaj</CardTitle>
                   <CardDescription>Computer Science Program</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
@@ -1044,10 +1077,10 @@ export default function InstituteWebsite() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-2">
-                  123 Education Street
+                  E-5/99, gali no 2
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  Knowledge City, State 560001
+                  india delhi
                 </p>
                 <Button variant="outline" size="sm">
                   Get Directions
@@ -1066,7 +1099,7 @@ export default function InstituteWebsite() {
                 <p className="text-muted-foreground mb-2">
                   Admissions Helpline
                 </p>
-                <p className="font-semibold text-lg mb-4">+91 98765 43210</p>
+                <p className="font-semibold text-lg mb-4">+91 98110 57531</p>
                 <Button variant="outline" size="sm">
                   Call Now
                 </Button>
@@ -1083,7 +1116,7 @@ export default function InstituteWebsite() {
               <CardContent>
                 <p className="text-muted-foreground mb-2">General Inquiries</p>
                 <p className="font-semibold mb-4">
-                  info@excellenceinstitute.edu
+                  sahilbajaj0941gmail.com
                 </p>
                 <Button variant="outline" size="sm">
                   Send Email
@@ -1294,7 +1327,7 @@ export default function InstituteWebsite() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <GraduationCap className="h-8 w-8 text-blue-400" />
-                <span className="text-xl font-bold">Excellence Institute</span>
+                <span className="text-xl font-bold">Bajaj Institute</span>
               </div>
               <p className="text-gray-400 mb-4">
                 Empowering students with quality education and practical skills
@@ -1393,17 +1426,17 @@ export default function InstituteWebsite() {
             <div>
               <h3 className="font-semibold mb-4">Contact Info</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>123 Education Street</li>
-                <li>Knowledge City, State 560001</li>
-                <li>+91 98765 43210</li>
-                <li>info@excellenceinstitute.edu</li>
+                <li>E-5/99, gali no 2</li>
+                <li>india delhi</li>
+                <li>+91 98110 57531</li>
+                <li>sahilbajaj0941@gmail.com</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>
-              &copy; 2024 Excellence Institute. All rights reserved. | Privacy
+              &copy; 2024 bajaj Institute. All rights reserved. | Privacy
               Policy | Terms of Service
             </p>
           </div>
