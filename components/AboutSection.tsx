@@ -10,10 +10,10 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="text-center mb-10">
           <Badge className="mb-3 dark:bg-blue-900 dark:text-blue-200">
-            About Bajaj Institute
+            About Prerna Institution
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold mb-3 dark:text-white">
-            Empowering Students Since 2010
+            Empowering Students Since 2018
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto dark:text-gray-300">
             We are committed to providing world-class education through
@@ -34,8 +34,8 @@ export default function AboutSection() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground dark:text-gray-400">
-                Industry-aligned curriculum designed by experts to meet current
-                market demands and future trends.
+                Our teaching curriculum is crafted by professionals to match
+                today’s competitive standards and tomorrow’s opportunities.
               </p>
             </CardContent>
           </Card>
@@ -66,8 +66,7 @@ export default function AboutSection() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground dark:text-gray-400">
-                95% placement rate with students placed in top companies across
-                various industries.
+                Students achieve high scores, leading to a 95% passing rate
               </p>
             </CardContent>
           </Card>

@@ -235,16 +235,16 @@ export default function ContactSection() {
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     >
                       <option value="">Select a course</option>
-                      <option value="computer-science">
-                        Computer Science & Programming
+                      <option value="neet">
+                        NEET
                       </option>
-                      <option value="mathematics">
-                        Mathematics & Statistics
+                      <option value="jee">
+                        JEE
                       </option>
-                      <option value="science">Science & Research</option>
-                      <option value="english">English & Communication</option>
-                      <option value="business">Business & Management</option>
-                      <option value="competitive">Competitive Exam Prep</option>
+                      <option value="nda">NDA</option>
+                      <option value="foundation">Foundation (11th 12th + NEET JEE)</option>
+                      <option value="pre-university">Pre-University (11th 12th)</option>
+                      <option value="primary-secondary">Primary and secondary (1st to 10th)</option>
                     </select>
                   </div>
                   <div className="space-y-2 mt-2">
@@ -345,30 +345,41 @@ export default function ContactSection() {
               </CardHeader>
               <CardContent>
                 <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center mb-4 dark:bg-gray-700">
-                  <div className="text-center">
-                    <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2 dark:text-gray-300" />
-                    <p className="text-gray-500 font-medium dark:text-gray-300">
-                      Interactive Campus Map
-                    </p>
-                    <p className="text-sm text-gray-400 dark:text-gray-400">
-                      Google Maps integration
-                    </p>
-                  </div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.1605664258354!2d77.1989644!3d28.7446226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cff2b01cd3c91%3A0x4c34557e7fd25079!2sPrerna%20institutions%20%7C%20NEET%20COACHING%20IN%20DELHI%20%7C%20JEE%20COACHING%20IN%20DELHI!5e0!3m2!1sen!2sin!4v1750173096705!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, borderRadius: "0.5rem", minHeight: "16rem" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Campus Location Map"
+                  ></iframe>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button
+                    asChild
                     variant="outline"
                     className="flex-1 dark:border-gray-600 dark:text-gray-200"
                   >
-                    <MapPin className="mr-2 h-4 w-4" />
-                    View on Map
+                    <a
+                      href="https://maps.app.goo.gl/cyMKARvPjknSuas67"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MapPin className="mr-2 h-4 w-4" />
+                      View on Map
+                    </a>
                   </Button>
                   <Button
+                    asChild
                     variant="outline"
                     className="flex-1 dark:border-gray-600 dark:text-gray-200"
                   >
-                    <Phone className="mr-2 h-4 w-4" />
-                    Get Directions
+                    <a href="tel:+918700714570">
+                      <Phone className="mr-2 h-4 w-4" />
+                      Call Now
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -388,17 +399,28 @@ export default function ContactSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
+                asChild
                 size="lg"
                 className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800"
               >
-                Schedule Campus Tour
+                <a href="tel:+918700714570">
+                  Schedule Campus Tour
+                </a>
               </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="dark:border-gray-600 dark:text-gray-200"
               >
-                Download Brochure
+                <a
+                  href="/Brochure.jpg"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download Brochure
+                </a>
               </Button>
             </div>
           </div>

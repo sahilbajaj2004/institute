@@ -6,16 +6,16 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-2 lg:pt-4 pb-8 lg:pb-12 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 rounded-2xl">
+    <section className="relative pt-2 lg:pt-4 pb-8 lg:pb-12 bg-gradient-to-br from-green-100 via-green-200 to-green-300 dark:from-gray-900 dark:via-green-900 dark:to-gray-800 rounded-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100 dark:bg-blue-900 dark:text-blue-200 dark:hover:bg-blue-900">
-              Established 2010 • 15+ Years of Bajaj
+            <Badge className="mb-4 bg-green-200 text-green-900 hover:bg-green-300 dark:bg-green-800 dark:text-green-100 dark:hover:bg-green-700">
+              Established 2018 • 7+ Years of Prerna
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6 dark:text-white">
               Shape Your Future with
-              <span className="text-blue-600 dark:text-blue-400">
+              <span className="text-green-600 dark:text-green-400">
                 {" "}
                 Quality Education
               </span>
@@ -29,25 +29,25 @@ export default function HeroSection() {
               <a href="#courses" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 w-full sm:w-auto dark:bg-blue-500 dark:hover:bg-blue-600"
+                  className="bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 w-full sm:w-auto dark:bg-green-500 dark:hover:bg-green-600"
                 >
                   Explore Courses
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
-              <a href="#contact" className="w-full sm:w-auto">
+              <a href="tel:8700714570" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto dark:border-gray-600 dark:text-gray-200"
+                  className="w-full sm:w-auto border-black text-black dark:border-gray-600 dark:text-gray-200"
                 >
                   Schedule Campus Visit
                 </Button>
               </a>
             </div>
-            <div className="flex items-center gap-8 mt-8 pt-8 border-t dark:border-gray-700">
+            <div className="flex items-center gap-8 mt-8 pt-8 border-t border-black dark:border-gray-700">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                <div className="text-2xl font-bold text-green-600 dark:text-green-400">
                   5000+
                 </div>
                 <div className="text-sm text-muted-foreground dark:text-gray-400">
@@ -55,7 +55,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                <div className="text-2xl font-bold text-green-600 dark:text-green-400">
                   95%
                 </div>
                 <div className="text-sm text-muted-foreground dark:text-gray-400">
@@ -63,7 +63,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                <div className="text-2xl font-bold text-green-600 dark:text-green-400">
                   50+
                 </div>
                 <div className="text-sm text-muted-foreground dark:text-gray-400">

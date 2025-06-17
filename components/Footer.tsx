@@ -10,7 +10,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a101a] text-white py-12 rounded-t-2xl dark:bg-black dark:text-gray-100 shadow-2xl border-t-4 border-blue-900">
+    <footer className="bg-[#0a101a] text-white py-6 rounded-t-2xl dark:bg-black dark:text-gray-100 shadow-2xl border-t-4 border-blue-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
@@ -153,10 +153,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 dark:border-gray-700 dark:text-gray-400">
+        <div className="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400 dark:border-gray-700 dark:text-gray-400">
           <p>
             &copy; 2024 Prerna institution. All rights reserved. | Privacy
-            Policy | Terms of Service | Designed and Developed by Sahil Bajaj |{" "}
+            Policy | Terms of Service | Designed and Developed by Sahil Bajaj {" "}
             <a
               href="tel:+919811057531"
               className="text-blue-400 hover:underline"
