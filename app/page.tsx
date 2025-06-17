@@ -1,4 +1,7 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import React, { useState } from "react";
 import {
   Card,
   CardContent,
@@ -27,6 +30,58 @@ import {
 } from "lucide-react";
 
 export default function InstituteWebsite() {
+
+
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setSuccess(null);
+
+    const form = e.currentTarget;
+    const data = {
+      access_key: "c81553c7-6bd2-4c55-80c7-fa95e009c1fc",
+      first_name: (form.elements.namedItem("firstName") as HTMLInputElement)
+        .value,
+      last_name: (form.elements.namedItem("lastName") as HTMLInputElement)
+        .value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      course: (form.elements.namedItem("course") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement)
+        .value,
+      newsletter: (form.elements.namedItem("newsletter") as HTMLInputElement)
+        .checked
+        ? "Yes"
+        : "No",
+    };
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+    setLoading(false);
+
+    if (result.success) {
+      setSuccess("Message sent successfully!");
+      form.reset();
+    } else {
+      setSuccess("Failed to send message. Please try again.");
+    }
+  }
+
+
+
+
   return (
     <div className="min-h-screen mx-auto px-8 bg-background">
       {/* Header */}
@@ -314,7 +369,8 @@ export default function InstituteWebsite() {
                 </div>
                 <CardTitle>lorem</CardTitle>
                 <CardDescription>
-                  lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,sequi.
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta,sequi.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -411,7 +467,8 @@ export default function InstituteWebsite() {
                 </div>
                 <CardTitle>lorem</CardTitle>
                 <CardDescription>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, pr
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                  pr
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -658,9 +715,11 @@ export default function InstituteWebsite() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium nesciunt per
-                  spiciatis mollitia dolorum at praesentium earum placeat qui consequuntur aspernatur
-                  nobis est ullam quaerat modi, voluptate dignissimos repellat! Dolor!"
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi accusantium nesciunt per spiciatis mollitia dolorum at
+                  praesentium earum placeat qui consequuntur aspernatur nobis
+                  est ullam quaerat modi, voluptate dignissimos repellat!
+                  Dolor!"
                 </p>
               </CardContent>
             </Card>
@@ -688,9 +747,10 @@ export default function InstituteWebsite() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet quis non s
-                  imilique reiciendis illum maiores, neque vero explicabo nesciunt facere quia hi
-                  c recusandae dolorem deleniti quae velit? Porro, consectetur.."
+                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore eveniet quis non s imilique reiciendis illum maiores,
+                  neque vero explicabo nesciunt facere quia hi c recusandae
+                  dolorem deleniti quae velit? Porro, consectetur.."
                 </p>
               </CardContent>
             </Card>
@@ -718,9 +778,7 @@ export default function InstituteWebsite() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  "lorem ips
-                  um dolor sit amet consectetu
-                  r adipisicing elit."
+                  "lorem ips um dolor sit amet consectetu r adipisicing elit."
                 </p>
               </CardContent>
             </Card>
@@ -739,8 +797,8 @@ export default function InstituteWebsite() {
               Outstanding Results & Success Stories
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our consistent track record of bajaj speaks for itself. Here
-              are our achievements over the years.
+              Our consistent track record of bajaj speaks for itself. Here are
+              our achievements over the years.
             </p>
           </div>
 
@@ -1076,12 +1134,8 @@ export default function InstituteWebsite() {
                 <CardTitle>Visit Our Campus</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-2">
-                  E-5/99, gali no 2
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  india delhi
-                </p>
+                <p className="text-muted-foreground mb-2">E-5/99, gali no 2</p>
+                <p className="text-muted-foreground mb-4">india delhi</p>
                 <Button variant="outline" size="sm">
                   Get Directions
                 </Button>
@@ -1115,9 +1169,7 @@ export default function InstituteWebsite() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-2">General Inquiries</p>
-                <p className="font-semibold mb-4">
-                  sahilbajaj0941gmail.com
-                </p>
+                <p className="font-semibold mb-4">sahilbajaj0941gmail.com</p>
                 <Button variant="outline" size="sm">
                   Send Email
                 </Button>
@@ -1131,104 +1183,138 @@ export default function InstituteWebsite() {
               <CardHeader>
                 <CardTitle className="text-2xl">Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you within 24
-                  hours
+                  Fill out the form below and we'll get back to you within 24 hours
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">
-                      First Name *
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder="Enter your first name"
-                    />
+              <CardContent className="space-y-6 py-4">
+                <div className="space-y-6">
+                  <form onSubmit={handleSubmit}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-gray-700">
+                          First Name *
+                        </label>
+                        <input
+                          type="text"
+                          name="firstName"
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                          placeholder="Enter your first name"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-gray-700">
+                          Last Name *
+                        </label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                          placeholder="Enter your last name"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-gray-700">
+                          Email Address *
+                        </label>
+                        <input
+                          type="email"
+                          name="email"
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                          placeholder="your.email@example.com"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-gray-700">
+                          Phone Number *
+                        </label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                          placeholder="+91 98765 43210"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="space-y-2 mt-2">
+                      <label className="text-sm font-medium text-gray-700">
+                        Course of Interest
+                      </label>
+                      <select
+                        name="course"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      >
+                        <option value="">Select a course</option>
+                        <option value="computer-science">
+                          Computer Science & Programming
+                        </option>
+                        <option value="mathematics">
+                          Mathematics & Statistics
+                        </option>
+                        <option value="science">Science & Research</option>
+                        <option value="english">English & Communication</option>
+                        <option value="business">Business & Management</option>
+                        <option value="competitive">Competitive Exam Prep</option>
+                      </select>
+                    </div>
+
+                    <div className="space-y-2 mt-2">
+                      <label className="text-sm font-medium text-gray-700">
+                        Message
+                      </label>
+                      <textarea
+                        name="message"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                        rows={4}
+                        placeholder="Tell us about your educational goals and any specific questions you have..."
+                      ></textarea>
+                    </div>
+
+                    <div className="flex items-center gap-2 mt-2">
+                      <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                        className="rounded"
+                      />
+                      <label htmlFor="newsletter" className="text-sm text-gray-600">
+                        I would like to receive updates about courses and events
+                      </label>
+                    </div>
+
+                    <Button
+                      type="submit"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg mt-4"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <>
+                          <span className="animate-spin mr-2">⏳</span> Sending...
+                        </>
+                      ) : (
+                        <>
+                          Send Message <Mail className="ml-2 h-5 w-5" />
+                        </>
+                      )}
+                    </Button>
+                    {success && (
+                      <div className="mt-4 text-center text-green-600 font-semibold">
+                        {success}
+                      </div>
+                    )}
+                  </form>
+                  <div className="text-xs text-gray-400 text-center">
+                    We respect your privacy. Your information will not be shared.
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">
-                      Last Name *
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder="Enter your last name"
-                    />
-                  </div>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder="+91 98765 43210"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">
-                    Course of Interest
-                  </label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
-                    <option value="">Select a course</option>
-                    <option value="computer-science">
-                      Computer Science & Programming
-                    </option>
-                    <option value="mathematics">
-                      Mathematics & Statistics
-                    </option>
-                    <option value="science">Science & Research</option>
-                    <option value="english">English & Communication</option>
-                    <option value="business">Business & Management</option>
-                    <option value="competitive">Competitive Exam Prep</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">
-                    Message
-                  </label>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">
-                    Message
-                  </label>
-                  <textarea
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
-                    rows={4}
-                    placeholder="Tell us about your educational goals and any specific questions you have..."
-                  ></textarea>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <input type="checkbox" id="newsletter" className="rounded" />
-                  <label htmlFor="newsletter" className="text-sm text-gray-600">
-                    I would like to receive updates about courses and events
-                  </label>
-                </div>
-
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg">
-                  Send Message
-                  <Mail className="ml-2 h-5 w-5" />
-                </Button>
               </CardContent>
             </Card>
 
@@ -1436,8 +1522,8 @@ export default function InstituteWebsite() {
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>
-              &copy; 2024 bajaj Institute. All rights reserved. | Privacy
-              Policy | Terms of Service
+              &copy; 2024 bajaj Institute. All rights reserved. | Privacy Policy
+              | Terms of Service
             </p>
           </div>
         </div>
