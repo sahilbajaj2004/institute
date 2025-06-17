@@ -83,10 +83,10 @@ export default function InstituteWebsite() {
 
 
   return (
-    <div className="min-h-screen mx-auto px-8 bg-background">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
-        <div className="container px-8 lg:px-12 flex h-16 items-center justify-between">
+      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex h-16 items-center justify-between">
           <a href="#hero" className="flex items-center gap-2">
             <GraduationCap className="h-8 w-8 text-blue-600" />
             <span className="text-xl font-bold">Bajaj Institute</span>
@@ -136,7 +136,7 @@ export default function InstituteWebsite() {
         id="hero"
         className="relative pb-20 lg:pb-32 pt-8 lg:pt-12 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl"
       >
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">
@@ -198,19 +198,23 @@ export default function InstituteWebsite() {
                 alt="Students in classroom"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+                <div className="absolute -bottom-3 left-1/2 bg-white p-4 rounded-xl shadow-lg
+                sm:-bottom-6 sm:-left-6
+                -translate-x-1/2 sm:translate-x-0
+                w-[90vw] max-w-xs sm:w-auto
+                ">
                 <div className="flex items-center gap-3">
                   <div className="bg-green-100 p-2 rounded-full">
-                    <Award className="h-5 w-5 text-green-600" />
+                  <Award className="h-5 w-5 text-green-600" />
                   </div>
                   <div>
-                    <div className="font-semibold">ISO Certified</div>
-                    <div className="text-sm text-muted-foreground">
-                      Quality Assured
-                    </div>
+                  <div className="font-semibold">ISO Certified</div>
+                  <div className="text-sm text-muted-foreground">
+                    Quality Assured
+                  </div>
                   </div>
                 </div>
-              </div>
+                </div>
             </div>
           </div>
         </div>
@@ -218,7 +222,7 @@ export default function InstituteWebsite() {
 
       {/* About Section */}
       <section id="about" className="py-20">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-10">
             <Badge className="mb-3">About Bajaj Institute</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-3">
@@ -282,7 +286,7 @@ export default function InstituteWebsite() {
 
       {/* Courses Section */}
       <section id="courses" className="py-15 bg-gray-50 rounded-2xl">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Our Programs</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -497,7 +501,7 @@ export default function InstituteWebsite() {
 
       {/* Faculty Section */}
       <section id="faculty" className="py-20">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Our Faculty</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -591,7 +595,7 @@ export default function InstituteWebsite() {
 
       {/* Facilities Section */}
       <section id="facilities" className="py-15 bg-gray-50 rounded-2xl">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Our Facilities</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -683,7 +687,7 @@ export default function InstituteWebsite() {
 
       {/* Testimonials */}
       <section className="py-12">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Student Success Stories</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -788,7 +792,7 @@ export default function InstituteWebsite() {
 
       {/* Results Section */}
       <section className="py-15 bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-green-100 text-green-800">
               Our Achievements
@@ -1113,7 +1117,7 @@ export default function InstituteWebsite() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <Badge className="mb-4">Get In Touch</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -1183,7 +1187,8 @@ export default function InstituteWebsite() {
               <CardHeader>
                 <CardTitle className="text-2xl">Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you within 24 hours
+                  Fill out the form below and we'll get back to you within 24
+                  hours
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 py-4">
@@ -1261,7 +1266,9 @@ export default function InstituteWebsite() {
                         <option value="science">Science & Research</option>
                         <option value="english">English & Communication</option>
                         <option value="business">Business & Management</option>
-                        <option value="competitive">Competitive Exam Prep</option>
+                        <option value="competitive">
+                          Competitive Exam Prep
+                        </option>
                       </select>
                     </div>
 
@@ -1285,7 +1292,10 @@ export default function InstituteWebsite() {
                         name="newsletter"
                         className="rounded"
                       />
-                      <label htmlFor="newsletter" className="text-sm text-gray-600">
+                      <label
+                        htmlFor="newsletter"
+                        className="text-sm text-gray-600"
+                      >
                         I would like to receive updates about courses and events
                       </label>
                     </div>
@@ -1297,7 +1307,8 @@ export default function InstituteWebsite() {
                     >
                       {loading ? (
                         <>
-                          <span className="animate-spin mr-2">⏳</span> Sending...
+                          <span className="animate-spin mr-2">⏳</span>{" "}
+                          Sending...
                         </>
                       ) : (
                         <>
@@ -1312,7 +1323,8 @@ export default function InstituteWebsite() {
                     )}
                   </form>
                   <div className="text-xs text-gray-400 text-center">
-                    We respect your privacy. Your information will not be shared.
+                    We respect your privacy. Your information will not be
+                    shared.
                   </div>
                 </div>
               </CardContent>
@@ -1408,7 +1420,7 @@ export default function InstituteWebsite() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 rounded-t-2xl">
-        <div className="container px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
