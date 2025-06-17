@@ -80,8 +80,8 @@ export default function InstituteWebsite() {
   }
 
 
-
-
+  
+  
   return (
     <div className="min-h-screen bg-background dark:bg-gray-900">
       {/* Header */}
@@ -1862,80 +1862,80 @@ export default function InstituteWebsite() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
-                    className="hover:text-white transition-colors dark:hover:text-blue-400"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <a
+            href="#contact"
+            className="hover:text-white transition-colors dark:hover:text-blue-400"
+          >
+            Contact
+          </a>
+            </li>
+          </ul>
+        </div>
 
-            <div>
-              <h3 className="font-semibold mb-4 dark:text-white">Programs</h3>
-              <ul className="space-y-2 text-gray-400 dark:text-gray-300">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white transition-colors dark:hover:text-blue-400"
-                  >
-                    Computer Science
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white transition-colors dark:hover:text-blue-400"
-                  >
-                    Mathematics
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white transition-colors dark:hover:text-blue-400"
-                  >
-                    Science & Research
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white transition-colors dark:hover:text-blue-400"
-                  >
-                    Business Management
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-white transition-colors dark:hover:text-blue-400"
-                  >
-                    Exam Preparation
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div>
+          <h3 className="font-semibold mb-4 dark:text-white">Programs</h3>
+          <ul className="space-y-2 text-gray-400 dark:text-gray-300">
+            <li>
+          <a
+            href="#"
+            className="hover:text-white transition-colors dark:hover:text-blue-400"
+          >
+            Computer Science
+          </a>
+            </li>
+            <li>
+          <a
+            href="#"
+            className="hover:text-white transition-colors dark:hover:text-blue-400"
+          >
+            Mathematics
+          </a>
+            </li>
+            <li>
+          <a
+            href="#"
+            className="hover:text-white transition-colors dark:hover:text-blue-400"
+          >
+            Science & Research
+          </a>
+            </li>
+            <li>
+          <a
+            href="#"
+            className="hover:text-white transition-colors dark:hover:text-blue-400"
+          >
+            Business Management
+          </a>
+            </li>
+            <li>
+          <a
+            href="#"
+            className="hover:text-white transition-colors dark:hover:text-blue-400"
+          >
+            Exam Preparation
+          </a>
+            </li>
+          </ul>
+        </div>
 
-            <div>
-              <h3 className="font-semibold mb-4 dark:text-white">
-                Contact Info
-              </h3>
-              <ul className="space-y-2 text-gray-400 dark:text-gray-300">
-                <li>E-5/99, gali no 2</li>
-                <li>india delhi</li>
-                <li>+91 98110 57531</li>
-                <li>sahilbajaj0941@gmail.com</li>
-              </ul>
-            </div>
+        <div>
+          <h3 className="font-semibold mb-4 dark:text-white">
+            Contact Info
+          </h3>
+          <ul className="space-y-2 text-gray-400 dark:text-gray-300">
+            <li>E-5/99, gali no 2</li>
+            <li>india delhi</li>
+            <li>+91 98110 57531</li>
+            <li>sahilbajaj0941@gmail.com</li>
+          </ul>
+        </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 dark:border-gray-700 dark:text-gray-400">
-            <p>
-              &copy; 2024 bajaj Institute. All rights reserved. | Privacy Policy
-              | Terms of Service
-            </p>
+        <p>
+          &copy; 2024 bajaj Institute. All rights reserved. | Privacy Policy
+          | Terms of Service
+        </p>
           </div>
         </div>
       </footer>

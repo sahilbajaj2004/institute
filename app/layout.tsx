@@ -2,8 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Doppler',
-  description: 'A website with next js',
+  title: 'Bajaj',
+  description: 'The institute website made by sahil bajaj',
+  icons: {
+    icon: '/favicon.ico', // Make sure this path points to your favicon file
+  },
 }
 
 export default function RootLayout({
@@ -13,6 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Bajaj</title>
+        <meta name="description" content="The institute website made by sahil bajaj" />
+      </head>
       <body>{children}</body>
     </html>
   )
