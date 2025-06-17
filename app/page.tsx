@@ -1177,7 +1177,7 @@ export default function InstituteWebsite() {
             </Card>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <Card>
               <CardHeader>
@@ -1366,7 +1366,7 @@ export default function InstituteWebsite() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex flex-col sm:flex-row gap-3">
                     <Button variant="outline" className="flex-1">
                       <MapPin className="mr-2 h-4 w-4" />
                       View on Map
