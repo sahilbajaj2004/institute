@@ -22,9 +22,7 @@ import {
 
 export default function InstituteWebsite() {
   return (
-    // <div className="min-h-screen bg-background">
     <div className="min-h-screen mx-auto px-8 bg-background">
-      {/* <div className="w-full"> */}
       {/* Header */}
       <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
         <div className="container px-8 lg:px-12 flex h-16 items-center justify-between">
