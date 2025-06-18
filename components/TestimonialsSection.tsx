@@ -13,122 +13,110 @@ import React from "react";
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-12 dark:bg-gray-900">
+    <section className="py-20 bg-[#f9e98e]/60 dark:bg-[#2d3a2e]/90 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="text-center mb-16">
-          <Badge className="mb-4 dark:bg-blue-900 dark:text-blue-200">
+        <div className="text-center mb-10">
+          <Badge className="mb-3 bg-[#3b7a57] text-[#f9e98e] dark:bg-[#f9e98e] dark:text-[#2d3a2e] font-semibold text-base px-4 py-2 rounded-full tracking-wide shadow">
             Student Success Stories
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 dark:text-white">
+          <h2 className="text-3xl lg:text-4xl font-extrabold mb-3 text-[#2d3a2e] dark:text-[#f9e98e] tracking-wide drop-shadow">
             What Our Students Say
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <Card className="dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md text-center">
             <CardHeader>
-              <div className="flex items-center gap-4">
-                <Avatar>
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" />
-                  <AvatarFallback className="dark:bg-gray-700 dark:text-gray-200">
-                    RK
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <CardTitle className="text-base dark:text-white">
-                    Rahul Kumar
-                  </CardTitle>
-                  <CardDescription className="dark:text-gray-400">
-                    Software Engineer at TCS
-                  </CardDescription>
-                </div>
-              </div>
+              <Avatar className="w-16 h-16 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=64&width=64" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
+                  RK
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-lg font-bold text-[#2d3a2e] dark:text-[#f9e98e]">
+                Rahul Kumar
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
+                Software Engineer at TCS
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex mb-2">
+              <div className="flex justify-center mb-2">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
                   />
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground dark:text-gray-400">
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                accusantium nesciunt per spiciatis mollitia dolorum at
+                accusantium nesciunt perspiciatis mollitia dolorum at
                 praesentium earum placeat qui consequuntur aspernatur nobis est
                 ullam quaerat modi, voluptate dignissimos repellat! Dolor!"
               </p>
             </CardContent>
           </Card>
 
-          <Card className="dark:bg-gray-800 dark:border-gray-700">
+          <Card className="bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md text-center">
             <CardHeader>
-              <div className="flex items-center gap-4">
-                <Avatar>
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" />
-                  <AvatarFallback className="dark:bg-gray-700 dark:text-gray-200">
-                    SP
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <CardTitle className="text-base dark:text-white">
-                    Sneha Patel
-                  </CardTitle>
-                  <CardDescription className="dark:text-gray-400">
-                    Data Analyst at Infosys
-                  </CardDescription>
-                </div>
-              </div>
+              <Avatar className="w-16 h-16 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=64&width=64" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
+                  SP
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-lg font-bold text-[#2d3a2e] dark:text-[#f9e98e]">
+                Sneha Patel
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
+                Data Analyst at Infosys
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex mb-2">
+              <div className="flex justify-center mb-2">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
                   />
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground dark:text-gray-400">
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100">
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Labore eveniet quis non s imilique reiciendis illum maiores,
-                neque vero explicabo nesciunt facere quia hi c recusandae
-                dolorem deleniti quae velit? Porro, consectetur.."
+                Labore eveniet quis non similique reiciendis illum maiores,
+                neque vero explicabo nesciunt facere quia hic recusandae dolorem
+                deleniti quae velit? Porro, consectetur."
               </p>
             </CardContent>
           </Card>
 
-          <Card className="dark:bg-gray-800 dark:border-gray-700">
+          <Card className="bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md text-center">
             <CardHeader>
-              <div className="flex items-center gap-4">
-                <Avatar>
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" />
-                  <AvatarFallback className="dark:bg-gray-700 dark:text-gray-200">
-                    AJ
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <CardTitle className="text-base dark:text-white">
-                    Arjun Joshi
-                  </CardTitle>
-                  <CardDescription className="dark:text-gray-400">
-                    Research Scientist
-                  </CardDescription>
-                </div>
-              </div>
+              <Avatar className="w-16 h-16 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=64&width=64" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
+                  AJ
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-lg font-bold text-[#2d3a2e] dark:text-[#f9e98e]">
+                Arjun Joshi
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
+                Research Scientist
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex mb-2">
+              <div className="flex justify-center mb-2">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
                   />
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground dark:text-gray-400">
-                "lorem ips um dolor sit amet consectetu r adipisicing elit."
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit."
               </p>
             </CardContent>
           </Card>

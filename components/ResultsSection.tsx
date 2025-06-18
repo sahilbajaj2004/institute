@@ -21,11 +21,11 @@ import React from "react";
 
 export default function ResultsSection() {
   return (
-    <section className="py-15 bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl dark:from-gray-900 dark:to-gray-800">
+    <section className="py-15 bg-gradient-to-br from-green-50 to-emerald-100  dark:from-gray-900 dark:to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
-            Our Achievements
+          <Badge className="mb-3 bg-[#3b7a57] text-[#f9e98e] dark:bg-[#f9e98e] dark:text-[#2d3a2e] font-semibold text-base px-4 py-2 rounded-full tracking-wide shadow">
+            Our Achivements
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 dark:text-white">
             Outstanding Results & Success Stories

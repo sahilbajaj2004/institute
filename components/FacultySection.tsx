@@ -12,120 +12,131 @@ import React from "react";
 
 export default function FacultySection() {
   return (
-    <section id="faculty" className="py-20 dark:bg-gray-900">
+    <section
+      id="faculty"
+      className="py-20 bg-[#f9e98e]/60 dark:bg-[#2d3a2e]/90 transition-colors"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="text-center mb-16">
-          <Badge className="mb-4 dark:bg-blue-900 dark:text-blue-200">
+        <div className="text-center mb-10">
+          <Badge className="mb-3 bg-[#3b7a57] text-[#f9e98e] dark:bg-[#f9e98e] dark:text-[#2d3a2e] font-semibold text-base px-4 py-2 rounded-full tracking-wide shadow">
             Our Faculty
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 dark:text-white">
+          <h2 className="text-3xl lg:text-4xl font-extrabold mb-3 text-[#2d3a2e] dark:text-[#f9e98e] tracking-wide drop-shadow">
             Learn from Industry Experts
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto dark:text-gray-300">
+          <p className="text-xl max-w-3xl mx-auto text-[#3b7a57] dark:text-yellow-100 font-medium">
             Our experienced faculty brings real-world expertise and academic
-            bajaj to every classroom
+            excellence to every classroom.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Card className="text-center dark:bg-gray-800 dark:border-gray-700">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4">
+              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
                 <AvatarImage src="/placeholder.svg?height=80&width=80" />
-                <AvatarFallback className="dark:bg-gray-700 dark:text-gray-200">
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
                   DR
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="dark:text-white">Dr. Sahil Bajaj</CardTitle>
-              <CardDescription className="dark:text-gray-400">
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Dr. Sahil Bajaj
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
                 Head of Computer Science
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground mb-2 dark:text-gray-400">
-                bachelor of Computer Science, 1+ years experience
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
+                Bachelor of Computer Science, 1+ years experience
               </p>
               <Badge
                 variant="outline"
-                className="text-xs dark:border-gray-600 dark:text-gray-200"
+                className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
               >
                 Expert in web development and AI
               </Badge>
             </CardContent>
           </Card>
 
-          <Card className="text-center dark:bg-gray-800 dark:border-gray-700">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4">
+              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
                 <AvatarImage src="/placeholder.svg?height=80&width=80" />
-                <AvatarFallback className="dark:bg-gray-700 dark:text-gray-200">
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
                   PS
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="dark:text-white">lorem</CardTitle>
-              <CardDescription className="dark:text-gray-400">
-                loremhgjgjhgjgjhgjhgjhgjh
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Priya Sharma
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
+                Senior Mathematics Faculty
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground mb-2 dark:text-gray-400">
-                , 12+ years experience
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
+                M.Sc. Mathematics, 12+ years experience
               </p>
               <Badge
                 variant="outline"
-                className="text-xs dark:border-gray-600 dark:text-gray-200"
+                className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
               >
-                lorem
+                Olympiad Mentor
               </Badge>
             </CardContent>
           </Card>
 
-          <Card className="text-center dark:bg-gray-800 dark:border-gray-700">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4">
+              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
                 <AvatarImage src="/placeholder.svg?height=80&width=80" />
-                <AvatarFallback className="dark:bg-gray-700 dark:text-gray-200">
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
                   AS
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="dark:text-white">lorem</CardTitle>
-              <CardDescription className="dark:text-gray-400">
-                lorem hggdgdgdgd
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Amit Singh
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
+                Physics Faculty
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground mb-2 dark:text-gray-400">
-                18+ years experience
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
+                M.Sc. Physics, 18+ years experience
               </p>
               <Badge
                 variant="outline"
-                className="text-xs dark:border-gray-600 dark:text-gray-200"
+                className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
               >
-                lorem hgfghdgdgfdg
+                JEE/NEET Specialist
               </Badge>
             </CardContent>
           </Card>
 
-          <Card className="text-center dark:bg-gray-800 dark:border-gray-700">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4">
+              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
                 <AvatarImage src="/placeholder.svg?height=80&width=80" />
-                <AvatarFallback className="dark:bg-gray-700 dark:text-gray-200">
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
                   MG
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="dark:text-white">lorem jhghf</CardTitle>
-              <CardDescription className="dark:text-gray-400">
-                loremhghdgdgfdf
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Meena Gupta
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
+                English & Communication
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground mb-2 dark:text-gray-400">
-                10+ years experience
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
+                M.A. English, 10+ years experience
               </p>
               <Badge
                 variant="outline"
-                className="text-xs dark:border-gray-600 dark:text-gray-200"
+                className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
               >
                 Communication Expert
               </Badge>

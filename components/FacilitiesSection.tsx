@@ -21,39 +21,39 @@ export default function FacilitiesSection() {
   return (
     <section
       id="facilities"
-      className="py-18 bg-gray-50 rounded-2xl dark:bg-[#181f2a]"
+      className="py-20 bg-[#f9e98e]/40 dark:bg-[#2d3a2e]/90 transition-colors"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="text-center mb-16">
-          <Badge className="mb-4 dark:bg-blue-900 dark:text-blue-200">
+          <Badge className="mb-4 bg-[#3b7a57] text-[#f9e98e] dark:bg-[#f9e98e] dark:text-[#2d3a2e] font-semibold text-base px-4 py-2 rounded-full tracking-wide shadow">
             Our Facilities
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 dark:text-white">
+          <h2 className="text-3xl lg:text-4xl font-extrabold mb-4 text-[#2d3a2e] dark:text-[#f9e98e] tracking-wide drop-shadow">
             State-of-the-Art Infrastructure
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto dark:text-gray-300">
+          <p className="text-xl max-w-3xl mx-auto text-[#3b7a57] dark:text-yellow-100 font-medium">
             Modern facilities designed to enhance learning and provide the best
-            educational experience
+            educational experience.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <Card className="hover:shadow-lg transition-shadow dark:bg-[#232c3a] dark:border-gray-700">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Computer className="h-8 w-8 text-blue-600 dark:text-blue-300" />
                 <Badge
                   variant="secondary"
-                  className="dark:bg-gray-700 dark:text-gray-200"
+                  className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-semibold"
                 >
                   Smart Classrooms
                 </Badge>
               </div>
-              <CardTitle className="dark:text-white">
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
                 Interactive Learning
               </CardTitle>
-              <CardDescription className="dark:text-gray-400">
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
                 Interactive whiteboards, projectors, and modern seating
                 arrangements.
               </CardDescription>
@@ -68,19 +68,21 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 2 */}
-          <Card className="hover:shadow-lg transition-shadow dark:bg-[#232c3a] dark:border-gray-700">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Calculator className="h-8 w-8 text-green-600 dark:text-green-300" />
                 <Badge
                   variant="secondary"
-                  className="dark:bg-gray-700 dark:text-gray-200"
+                  className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-semibold"
                 >
                   Computer Labs
                 </Badge>
               </div>
-              <CardTitle className="dark:text-white">High-Tech Labs</CardTitle>
-              <CardDescription className="dark:text-gray-400">
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                High-Tech Labs
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
                 Latest computers with high-speed internet and software tools.
               </CardDescription>
             </CardHeader>
@@ -94,21 +96,21 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 3 */}
-          <Card className="hover:shadow-lg transition-shadow dark:bg-[#232c3a] dark:border-gray-700">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Microscope className="h-8 w-8 text-purple-600 dark:text-purple-300" />
                 <Badge
                   variant="secondary"
-                  className="dark:bg-gray-700 dark:text-gray-200"
+                  className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-semibold"
                 >
                   Science Labs
                 </Badge>
               </div>
-              <CardTitle className="dark:text-white">
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
                 Science Laboratory
               </CardTitle>
-              <CardDescription className="dark:text-gray-400">
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
                 Well-equipped labs for physics, chemistry, and biology
                 experiments.
               </CardDescription>
@@ -123,19 +125,21 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 4 */}
-          <Card className="hover:shadow-lg transition-shadow dark:bg-[#232c3a] dark:border-gray-700">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <BookOpen className="h-8 w-8 text-orange-600 dark:text-orange-300" />
                 <Badge
                   variant="secondary"
-                  className="dark:bg-gray-700 dark:text-gray-200"
+                  className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-semibold"
                 >
                   Library
                 </Badge>
               </div>
-              <CardTitle className="dark:text-white">Digital Library</CardTitle>
-              <CardDescription className="dark:text-gray-400">
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Digital Library
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
                 Extensive collection of books, journals, and digital resources.
               </CardDescription>
             </CardHeader>
@@ -149,19 +153,21 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 5 */}
-          <Card className="hover:shadow-lg transition-shadow dark:bg-[#232c3a] dark:border-gray-700">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Building className="h-8 w-8 text-red-600 dark:text-red-300" />
                 <Badge
                   variant="secondary"
-                  className="dark:bg-gray-700 dark:text-gray-200"
+                  className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-semibold"
                 >
                   Auditorium
                 </Badge>
               </div>
-              <CardTitle className="dark:text-white">Auditorium</CardTitle>
-              <CardDescription className="dark:text-gray-400">
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Auditorium
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
                 300-seat auditorium for seminars, presentations, and events.
               </CardDescription>
             </CardHeader>
@@ -175,19 +181,21 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 6 */}
-          <Card className="hover:shadow-lg transition-shadow dark:bg-[#232c3a] dark:border-gray-700">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Award className="h-8 w-8 text-indigo-600 dark:text-indigo-300" />
                 <Badge
                   variant="secondary"
-                  className="dark:bg-gray-700 dark:text-gray-200"
+                  className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-semibold"
                 >
                   Cafeteria
                 </Badge>
               </div>
-              <CardTitle className="dark:text-white">Cafeteria</CardTitle>
-              <CardDescription className="dark:text-gray-400">
+              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Cafeteria
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
                 Hygienic food court with variety of healthy meal options.
               </CardDescription>
             </CardHeader>

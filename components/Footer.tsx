@@ -10,15 +10,17 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a101a] text-white py-6 rounded-t-2xl dark:bg-black dark:text-gray-100 shadow-2xl border-t-4 border-blue-900">
+    <footer className="bg-[#2e3522] text-[#f9e98e] py-8 rounded-t-2xl dark:bg-[#20281a] dark:text-[#f9e98e] shadow-2xl border-t-4 border-[#4e9a6e]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <GraduationCap className="h-8 w-8 text-blue-400 dark:text-blue-400" />
-              <span className="text-xl font-bold">Bajaj Institute</span>
+              <GraduationCap className="h-8 w-8 text-[#3b7a57] dark:text-[#f9e98e]" />
+              <span className="text-xl font-bold tracking-wide">
+                Prerna Institution
+              </span>
             </div>
-            <p className="text-gray-400 mb-4 dark:text-gray-300">
+            <p className="text-[#e2d47a] mb-4 dark:text-[#f9e98e]/80">
               Empowering students with quality education and practical skills
               for a successful future.
             </p>
@@ -29,7 +31,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Facebook"
               >
-                <Facebook className="h-8 w-8 text-blue-400 dark:text-blue-400 hover:scale-110 transition-transform" />
+                <Facebook className="h-8 w-8 text-[#3b7a57] dark:text-[#f9e98e] hover:scale-110 transition-transform" />
               </a>
               <a
                 href="https://instagram.com/"
@@ -37,7 +39,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
-                <Instagram className="h-8 w-8 text-pink-500 dark:text-pink-400 hover:scale-110 transition-transform" />
+                <Instagram className="h-8 w-8 text-[#b94e6f] dark:text-[#f9e98e] hover:scale-110 transition-transform" />
               </a>
               <a
                 href="https://linkedin.com/"
@@ -45,18 +47,18 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-8 w-8 text-blue-700 dark:text-blue-500 hover:scale-110 transition-transform" />
+                <Linkedin className="h-8 w-8 text-[#3b7a57] dark:text-[#f9e98e] hover:scale-110 transition-transform" />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4 dark:text-white">Quick Links</h3>
-            <ul className="space-y-2 text-gray-400 dark:text-gray-300">
+            <h3 className="font-semibold mb-4 text-[#f9e98e]">Quick Links</h3>
+            <ul className="space-y-2 text-[#e2d47a]">
               <li>
                 <a
                   href="#about"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
                   About Us
                 </a>
@@ -64,7 +66,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#courses"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
                   Courses
                 </a>
@@ -72,7 +74,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#faculty"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
                   Faculty
                 </a>
@@ -80,7 +82,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#facilities"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
                   Facilities
                 </a>
@@ -88,7 +90,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
                   Contact
                 </a>
@@ -97,69 +99,69 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4 dark:text-white">Programs</h3>
-            <ul className="space-y-2 text-gray-400 dark:text-gray-300">
+            <h3 className="font-semibold mb-4 text-[#f9e98e]">Programs</h3>
+            <ul className="space-y-2 text-[#e2d47a]">
               <li>
                 <a
                   href="#"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
-                  Computer Science
+                  NEET
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
-                  Mathematics
+                  JEE
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
-                  Science & Research
+                  NDA
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
-                  Business Management
+                  Foundation Batch
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-white transition-colors dark:hover:text-blue-400"
+                  className="hover:text-[#3b7a57] transition-colors dark:hover:text-yellow-300"
                 >
-                  Exam Preparation
+                  Pre-University
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4 dark:text-white">Contact Info</h3>
-            <ul className="space-y-2 text-gray-400 dark:text-gray-300">
-              <li>E-5/99, gali no 2</li>
-              <li>india delhi</li>
+            <h3 className="font-semibold mb-4 text-[#f9e98e]">Contact Info</h3>
+            <ul className="space-y-2 text-[#e2d47a]">
+              <li>E-5/99, Gali No 2</li>
+              <li>Delhi, India</li>
               <li>+91 98110 57531</li>
               <li>sahilbajaj0941@gmail.com</li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400 dark:border-gray-700 dark:text-gray-400">
+        <div className="border-t border-[#3b7a57] mt-8 pt-6 text-center text-[#e2d47a] dark:border-[#f9e98e]/30">
           <p>
-            &copy; 2024 Prerna institution. All rights reserved. | Privacy
-            Policy | Terms of Service | Designed and Developed by Sahil Bajaj {" "}
+            &copy; 2024 Prerna Institution. All rights reserved. | Privacy
+            Policy | Terms of Service | Designed and Developed by Sahil Bajaj{" "}
             <a
               href="tel:+919811057531"
-              className="text-blue-400 hover:underline"
+              className="text-[#3b7a57] hover:underline dark:text-yellow-300"
               aria-label="Call Sahil Bajaj"
             >
               9811057531
