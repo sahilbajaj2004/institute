@@ -30,48 +30,50 @@ export default function FacultySection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+        {/* Top 2 bigger cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-lg p-4 md:p-8">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+              <Avatar className="w-20 h-20 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
                 <AvatarImage src="/placeholder.svg?height=80&width=80" />
-                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
-                  DR
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold text-xl">
+                  GS
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
-                Dr. Sahil Bajaj
+              <CardTitle className="text-xl text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Dr. Gautam Sir
               </CardTitle>
-              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
-                Head of Computer Science
+              <CardDescription className="text-base text-[#3b7a57] dark:text-yellow-100">
+                Founder & Chief Mentor
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
-                Bachelor of Computer Science, 1+ years experience
+                Bachelor of Ayurvadic Medicine and Surgery (BAMS), 15+ years
+                experience
               </p>
               <Badge
                 variant="outline"
                 className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
               >
-                Expert in web development and AI
+                chemistry
               </Badge>
             </CardContent>
           </Card>
 
-          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-lg p-4 md:p-8">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+              <Avatar className="w-20 h-20 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
                 <AvatarImage src="/placeholder.svg?height=80&width=80" />
-                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
-                  PS
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold text-xl">
+                  AS
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
-                Priya Sharma
+              <CardTitle className="text-xl text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Prof. Amit Sharma
               </CardTitle>
-              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
-                Senior Mathematics Faculty
+              <CardDescription className="text-base text-[#3b7a57] dark:text-yellow-100">
+                Founder & Chief Mentor
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -86,59 +88,205 @@ export default function FacultySection() {
               </Badge>
             </CardContent>
           </Card>
+        </div>
 
-          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+        {/* Middle 3 medium cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md p-4 md:p-6">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
-                <AvatarImage src="/placeholder.svg?height=80&width=80" />
+              <Avatar className="w-16 h-16 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=64&width=64" />
                 <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
-                  AS
+                  GS
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
-                Amit Singh
+              <CardTitle className="text-lg text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Dr. Gautam Singh
               </CardTitle>
               <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
-                Physics Faculty
+                Head of Department - Chemistry
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
-                M.Sc. Physics, 18+ years experience
+                M.Sc. Chemistry, 18+ years experience
               </p>
               <Badge
                 variant="outline"
                 className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
               >
-                JEE/NEET Specialist
+                Chemistry Faculty
               </Badge>
             </CardContent>
           </Card>
 
-          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md p-4 md:p-6">
             <CardHeader>
-              <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
-                <AvatarImage src="/placeholder.svg?height=80&width=80" />
+              <Avatar className="w-16 h-16 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=64&width=64" />
                 <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
-                  MG
+                  YB
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
-                Meena Gupta
+              <CardTitle className="text-lg text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Dr. Yogesh Bist
               </CardTitle>
               <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
-                English & Communication
+                Head of Department - Biology
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
-                M.A. English, 10+ years experience
+                M.Sc. in Biology, 10+ years experience
               </p>
               <Badge
                 variant="outline"
                 className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
               >
-                Communication Expert
+                Biology Faculty
+              </Badge>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md p-4 md:p-6">
+            <CardHeader>
+              <Avatar className="w-16 h-16 mx-auto mb-3 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=64&width=64" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold">
+                  KK
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-lg text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Krishna Kapoor
+              </CardTitle>
+              <CardDescription className="text-[#3b7a57] dark:text-yellow-100">
+                Head of Department - Physics
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-[#3b7a57] dark:text-yellow-100 mb-2">
+                M.Sc. Physics, 15+ years experience
+              </p>
+              <Badge
+                variant="outline"
+                className="text-xs border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
+              >
+                Physics Faculty
+              </Badge>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Bottom 4 smaller cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow p-3">
+            <CardHeader>
+              <Avatar className="w-12 h-12 mx-auto mb-2 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=48&width=48" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold text-base">
+                  SS
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-base text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Abhishek Sharma and Dheeraj Singh
+              </CardTitle>
+              <CardDescription className="text-xs text-[#3b7a57] dark:text-yellow-100">
+                Chemistry Faculty
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-[#3b7a57] dark:text-yellow-100 mb-1">
+                M.Sc. Chemistry, 8+ years experience
+              </p>
+              <Badge
+                variant="outline"
+                className="text-[10px] border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
+              >
+                NEET Specialist
+              </Badge>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow p-3">
+            <CardHeader>
+              <Avatar className="w-12 h-12 mx-auto mb-2 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=48&width=48" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold text-base">
+                  VK
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-base text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Vinay Kumar
+              </CardTitle>
+              <CardDescription className="text-xs text-[#3b7a57] dark:text-yellow-100">
+                Computer Science
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-[#3b7a57] dark:text-yellow-100 mb-1">
+                M.Tech. CS, 7+ years experience
+              </p>
+              <Badge
+                variant="outline"
+                className="text-[10px] border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
+              >
+                Coding Mentor
+              </Badge>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow p-3">
+            <CardHeader>
+              <Avatar className="w-12 h-12 mx-auto mb-2 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=48&width=48" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold text-base">
+                  PK
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-base text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Priya Kapoor
+              </CardTitle>
+              <CardDescription className="text-xs text-[#3b7a57] dark:text-yellow-100">
+                Social Science
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-[#3b7a57] dark:text-yellow-100 mb-1">
+                M.A. Social Science, 6+ years experience
+              </p>
+              <Badge
+                variant="outline"
+                className="text-[10px] border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
+              >
+                UPSC Mentor
+              </Badge>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow p-3">
+            <CardHeader>
+              <Avatar className="w-12 h-12 mx-auto mb-2 border-2 border-[#3b7a57] dark:border-[#f9e98e]">
+                <AvatarImage src="/placeholder.svg?height=48&width=48" />
+                <AvatarFallback className="bg-[#f9e98e] text-[#3b7a57] dark:bg-[#3b7a57] dark:text-[#f9e98e] font-bold text-base">
+                  DS
+                </AvatarFallback>
+              </Avatar>
+              <CardTitle className="text-base text-[#2d3a2e] dark:text-[#f9e98e] font-bold">
+                Deepak Sinha
+              </CardTitle>
+              <CardDescription className="text-xs text-[#3b7a57] dark:text-yellow-100">
+                Hindi Faculty
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-[#3b7a57] dark:text-yellow-100 mb-1">
+                M.A. Hindi, 9+ years experience
+              </p>
+              <Badge
+                variant="outline"
+                className="text-[10px] border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e] bg-transparent"
+              >
+                Language Expert
               </Badge>
             </CardContent>
           </Card>
