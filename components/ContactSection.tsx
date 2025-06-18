@@ -22,7 +22,7 @@ export default function ContactSection() {
 
     const form = e.currentTarget;
     const data = {
-      access_key: "c81553c7-6bd2-4c55-80c7-fa95e009c1fc",
+      access_key: "48a4933e-6e49-4e97-ba91-33fe9c899d32",
       first_name: (form.elements.namedItem("firstName") as HTMLInputElement)
         .value,
       last_name: (form.elements.namedItem("lastName") as HTMLInputElement)
