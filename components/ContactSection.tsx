@@ -149,7 +149,7 @@ export default function ContactSection() {
                 General Inquiries
               </p>
               <p className="font-semibold mb-4 text-[#2d3a2e] dark:text-[#f9e98e]">
-                sahilbajaj0941@gmail.com
+                Prernainstitution@gmail.com
               </p>
               <Button
                 asChild
@@ -157,7 +157,7 @@ export default function ContactSection() {
                 size="sm"
                 className="border-[#3b7a57] text-[#3b7a57] dark:border-[#f9e98e] dark:text-[#f9e98e]"
               >
-                <a href="mailto:sahilbajaj0941@gmail.com">Send Email</a>
+                <a href="mailto:Prernainstitution@gmail.com">Send Email</a>
               </Button>
             </CardContent>
           </Card>

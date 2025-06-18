@@ -147,10 +147,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4 text-[#f9e98e]">Contact Info</h3>
             <ul className="space-y-2 text-[#e2d47a]">
-              <li>E-5/99, Gali No 2</li>
-              <li>Delhi, India</li>
-              <li>+91 98110 57531</li>
-              <li>sahilbajaj0941@gmail.com</li>
+              <li>Kh. No. 877 B.K Ashram Road, Labour Chowk</li>
+              <li>Sant Nagar, Burari, Delhi - 110084</li>
+              <li>+91 87007 14570</li>
+              <li>Prernainstitution@gmail.com</li>
             </ul>
           </div>
         </div>
