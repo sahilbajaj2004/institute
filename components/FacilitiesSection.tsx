@@ -26,7 +26,7 @@ export default function FacilitiesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-[#3b7a57] text-[#f9e98e] dark:bg-[#f9e98e] dark:text-[#2d3a2e] font-semibold text-base px-4 py-2 rounded-full tracking-wide shadow">
-            Our Facilities
+            Our Facilitie
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-extrabold mb-4 text-[#2d3a2e] dark:text-[#f9e98e] tracking-wide drop-shadow">
             State-of-the-Art Infrastructure
