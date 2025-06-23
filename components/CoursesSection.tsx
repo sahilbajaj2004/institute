@@ -87,7 +87,7 @@ export default function CoursesSection() {
                 asChild
                 className="w-full bg-[#3b7a57] hover:bg-[#2d3a2e] text-[#f9e98e] font-bold dark:bg-[#f9e98e] dark:text-[#2d3a2e] dark:hover:bg-yellow-200 rounded-full transition-colors"
               >
-                <Link href="/courses/neet">View Details</Link>
+                View Details
               </Button>
             </CardContent>
           </Card>
@@ -137,7 +137,7 @@ export default function CoursesSection() {
                 asChild
                 className="w-full bg-[#3b7a57] hover:bg-[#2d3a2e] text-[#f9e98e] font-bold dark:bg-[#f9e98e] dark:text-[#2d3a2e] dark:hover:bg-yellow-200 rounded-full transition-colors"
               >
-                <Link href="/courses/jee">View Details</Link>
+                View Details
               </Button>
             </CardContent>
           </Card>
@@ -187,7 +187,7 @@ export default function CoursesSection() {
                 asChild
                 className="w-full bg-[#3b7a57] hover:bg-[#2d3a2e] text-[#f9e98e] font-bold dark:bg-[#f9e98e] dark:text-[#2d3a2e] dark:hover:bg-yellow-200 rounded-full transition-colors"
               >
-                <Link href="/courses/nda">View Details</Link>
+                View Details
               </Button>
             </CardContent>
           </Card>
@@ -236,7 +236,7 @@ export default function CoursesSection() {
                 asChild
                 className="w-full bg-[#3b7a57] hover:bg-[#2d3a2e] text-[#f9e98e] font-bold dark:bg-[#f9e98e] dark:text-[#2d3a2e] dark:hover:bg-yellow-200 rounded-full transition-colors"
               >
-                <Link href="/courses/foundation">View Details</Link>
+                View Details
               </Button>
             </CardContent>
           </Card>
@@ -336,7 +336,7 @@ export default function CoursesSection() {
                 asChild
                 className="w-full bg-[#3b7a57] hover:bg-[#2d3a2e] text-[#f9e98e] font-bold dark:bg-[#f9e98e] dark:text-[#2d3a2e] dark:hover:bg-yellow-200 rounded-full transition-colors"
               >
-                <Link href="/courses/primarysecondary">View Details</Link>
+                View Details
               </Button>
             </CardContent>
           </Card>
