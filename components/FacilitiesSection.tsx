@@ -39,7 +39,7 @@ export default function FacilitiesSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-150 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Computer className="h-8 w-8 text-blue-600 dark:text-blue-300" />
@@ -68,7 +68,7 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 2 */}
-          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-150 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Calculator className="h-8 w-8 text-green-600 dark:text-green-300" />
@@ -96,7 +96,7 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 3 */}
-          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-150 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Microscope className="h-8 w-8 text-purple-600 dark:text-purple-300" />
@@ -125,7 +125,7 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 4 */}
-          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-150 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <BookOpen className="h-8 w-8 text-orange-600 dark:text-orange-300" />
@@ -153,7 +153,7 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 5 */}
-          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-150 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Building className="h-8 w-8 text-red-600 dark:text-red-300" />
@@ -181,7 +181,7 @@ export default function FacilitiesSection() {
           </Card>
 
           {/* Card 6 */}
-          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-200 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
+          <Card className="transition-transform cursor-pointer hover:scale-105 hover:shadow-lg duration-150 bg-[#fffde7] border-[#f9e98e] dark:bg-[#324233] dark:border-[#3b7a57] shadow-md">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Award className="h-8 w-8 text-indigo-600 dark:text-indigo-300" />
