@@ -72,7 +72,7 @@ export default function ContactSection() {
             Visit Our Campus Today
           </h2>
           <p className="text-xl text-[#3b7a57] max-w-3xl mx-auto dark:text-yellow-100 font-medium">
-            Schedule a campus tour or get in touch with our admissions team
+            Schedule a campus tour or get in touch with our admissions team now
           </p>
         </div>
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
