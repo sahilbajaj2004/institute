@@ -336,7 +336,7 @@ export default function CoursesSection() {
                 asChild
                 className="w-full bg-[#3b7a57] hover:bg-[#2d3a2e] text-[#f9e98e] font-bold dark:bg-[#f9e98e] dark:text-[#2d3a2e] dark:hover:bg-yellow-200 rounded-full transition-colors"
               >
-                View Details
+                View Detailss
               </Button>
             </CardContent>
           </Card>
