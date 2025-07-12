@@ -22,7 +22,7 @@ export default function InstituteWebsite() {
       <FacultySection />
       <FacilitiesSection />
       <TestimonialsSection />
-      {<ResultsSection />}
+      <ResultsSection />
       <ContactSection />
       <Footer />
     </div>
